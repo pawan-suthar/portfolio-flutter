@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 
 import 'components/About.dart';
 import 'components/Education.dart';
+import 'components/Footer.dart';
 
 class portfolio extends StatefulWidget {
   const portfolio({super.key});
@@ -51,6 +52,7 @@ class _portfolioState extends State<portfolio> {
                   Education(),
                 ],
               ),
+              Footer(),
             ]),
           ),
         ));
