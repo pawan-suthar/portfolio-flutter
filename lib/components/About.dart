@@ -50,7 +50,7 @@ class _AboutState extends State<About> {
               padding: EdgeInsets.all(8.0),
               child: Chip(
                 label: Text(
-                  "fullstack developer",
+                  "Resume",
                 ),
                 labelStyle: TextStyle(
                   color: Colors.black,
