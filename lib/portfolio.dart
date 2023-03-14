@@ -31,7 +31,7 @@ class _portfolioState extends State<portfolio> {
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Portfolio"),
+          title: const Text("Portfolio App"),
           actions: isMobile ? null : navItems,
         ),
         drawer: isMobile
