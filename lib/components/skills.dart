@@ -15,29 +15,34 @@ class Skills extends StatelessWidget {
       children: [
         Divider(),
         Container(
+          padding: EdgeInsets.all(20.0),
           width: context.screenWidth < 900
               ? context.screenWidth * 0.9
               : ((context.screenWidth * 0.8) / 3),
-          padding: EdgeInsets.symmetric(vertical: 15.0),
+          // padding: EdgeInsets.symmetric(vertical: 15.0),
           alignment: Alignment.center,
           child: Text(
             "My Skills",
-            style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w700),
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.w700,
+            ),
           ),
         ),
         Container(
           // width: context.screenWidth < 900
           //     ? context.screenWidth * 0.9
           //     : ((context.screenWidth * 0.8) / 3),
-          decoration: BoxDecoration(color: Colors.white),
+          decoration: BoxDecoration(
+              color: Colors.white, borderRadius: BorderRadius.circular(20.0)),
           child: Column(
             children: const [
               Chip(
                 label: Text(
                   "Python",
                 ),
-                labelStyle: TextStyle(color: Colors.black),
-                side: BorderSide(color: Colors.black),
+                labelStyle: TextStyle(color: Colors.indigo),
+                side: BorderSide(color: Colors.indigo),
                 backgroundColor: Colors.white,
               ),
             ],

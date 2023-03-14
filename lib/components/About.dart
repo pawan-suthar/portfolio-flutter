@@ -97,7 +97,7 @@ class _AboutState extends State<About> {
                       "github",
                     ),
                     Text(
-                      "pawan suthar",
+                      "pawan-suthar",
                     ),
                   ],
                 ),
@@ -127,7 +127,7 @@ class _AboutState extends State<About> {
                       "linkedin",
                     ),
                     Text(
-                      "pawan suthar",
+                      "pawansuthar1537",
                     ),
                   ],
                 ),
@@ -139,7 +139,7 @@ class _AboutState extends State<About> {
 
         //
 
-        const Social(),
+        // const Social(),
 
         Divider(),
       ]),

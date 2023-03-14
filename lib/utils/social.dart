@@ -47,7 +47,7 @@ class _SocialState extends State<Social> {
                   const EdgeInsets.only(left: 30.0, right: 20.0, top: 20.0),
               child: Center(
                 child: FaIcon(
-                  FontAwesomeIcons.phone,
+                  FontAwesomeIcons.squarePhone,
                 ),
               ),
             ),

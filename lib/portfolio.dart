@@ -15,34 +15,50 @@ class portfolio extends StatefulWidget {
 }
 
 class _portfolioState extends State<portfolio> {
-  List<Widget> navItems = [
-    Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: ElevatedButton(onPressed: () {}, child: Text("Educations")),
-    ),
-    Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: ElevatedButton(onPressed: () {}, child: Text("Skills")),
-    ),
-  ];
+  List<Widget> navItems = [];
 
   bool isMobile = false;
+
+  final skillkey = GlobalKey();
+
+  @override
+  void initState() {
+    navItems = [
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ElevatedButton(onPressed: () {}, child: Text("Educations")),
+      ),
+      Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: ElevatedButton(
+            onPressed: () {
+              Scrollable.ensureVisible(skillkey.currentContext!);
+            },
+            child: Text("Skills")),
+      ),
+    ];
+    // TODO: implement initState
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
 
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Portfolio App"),
+          title: const Text(
+            "Portfolio App",
+          ),
           actions: isMobile ? null : navItems,
         ),
-        drawer: isMobile
-            ? Drawer(
-                child: ListView(
-                  children: navItems,
-                ),
-              )
-            : null,
+        // drawer: isMobile
+        //     ? Drawer(
+        //         child: ListView(
+        //           children: navItems,
+        //         ),
+        //       )
+        // : null,
         body: SingleChildScrollView(
           child: Center(
             child: Column(children: [
@@ -54,7 +70,9 @@ class _portfolioState extends State<portfolio> {
                 ],
               ),
               //
-              Skills(),
+              Skills(
+                key: skillkey,
+              ),
 
               Footer(),
             ]),

@@ -48,19 +48,19 @@ class _EducationState extends State<Education> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                          "10 pass date",
+                          "14/03/2023",
                           style: TextStyle(
                             fontSize: 12.0,
                             color: Colors.indigo,
                           ),
                         ),
-                        const Text("basic sen. sec. school",
+                        const Text("MGS University",
                             style: TextStyle(
                               fontSize: 15.0,
                               fontWeight: FontWeight.w600,
                             )),
                         Text(
-                          "15 march 2023",
+                          "Msc(cs)",
                           style: TextStyle(
                             fontSize: 11.0,
                             color: Colors.grey.shade700,

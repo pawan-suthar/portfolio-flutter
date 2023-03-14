@@ -15,15 +15,15 @@ class _FooterState extends State<Footer> {
   Widget build(BuildContext context) {
     return Container(
         color: Colors.white,
-        padding: EdgeInsets.all(20.0),
-        margin: EdgeInsets.only(top: 15.0),
+        padding: EdgeInsets.all(5.0),
+        margin: EdgeInsets.only(top: 1.0),
         child: Column(
           children: const [
             Social(),
             SizedBox(
               height: 10.0,
             ),
-            Text("description"),
+            Text("designed by pawan suthar"),
           ],
         ));
   }
