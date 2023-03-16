@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/portfolio.dart';
+import 'package:permission_handler/permission_handler.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Request permission to access external storage
+  await Permission.storage.request();
+
   runApp(const MyApp());
 }
 
