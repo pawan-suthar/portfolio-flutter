@@ -70,9 +70,10 @@ class Social extends StatefulWidget {
 }
 
 class _SocialState extends State<Social> {
-  final String instagramUrl = 'https://www.instagram.com/';
-  final String googleUrl = 'https://www.google.com/';
-  final String phoneNumber = 'tel:1234567890';
+  final String instagramUrl = 'https://www.instagram.com/oyee_king_icon/';
+  final String googleUrl =
+      'https://www.facebook.com/profile.php?id=100044028456154';
+  final String phoneNumber = 'tel:7976191769';
 
   void _launchUrl(String url) async {
     if (await canLaunch(url)) {
@@ -105,7 +106,7 @@ class _SocialState extends State<Social> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 30.0, top: 20.0),
                 child: FaIcon(
-                  FontAwesomeIcons.google,
+                  FontAwesomeIcons.facebook,
                 ),
               ),
             ),
