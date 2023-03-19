@@ -12,7 +12,7 @@ class Social extends StatefulWidget {
 }
 
 class _SocialState extends State<Social> {
-  final String instagramUrl = 'https://www.instagram.com/oyee_king_icon/';
+  final String instagramUrl = 'https://www.instagram.com';
   final String googleUrl =
       'https://www.facebook.com/profile.php?id=100044028456154';
   final String phoneNumber = 'tel:7976191769';
